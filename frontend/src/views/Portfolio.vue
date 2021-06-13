@@ -1,16 +1,14 @@
 <template>
-	<div class="portfolio">
-		<h1>This is an portfolio page</h1>
+	
+	<div id="portfolio">
 		<div id="portnav">
-			<ul>
-				<li>All Projects</li>
-				<li>VUE.js and Node.js</li>
-				<li>PHP & MYSQL</li>
-				<li>Android Apps</li>
-			</ul>
-		</div>
+				<button @click="show">All Projects</button>
+				<button @click="Node">VUE.js and Node.js</button>
+				<button @click="Php">PHP & MYSQL</button>
+				<button @click="Android">Android Apps</button>
+		</div>		
 		<div class="tileproducts">
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawablestudios.animalrun.android"><img class="img" src="../assets/hiresAR.png"/></a>
 				</div>
@@ -19,7 +17,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!Nodesites">
 				<div class="tile">
 					<a href="https://github.com/humza3/API-backend"><img class="img" src="../assets/placeholder.jpg"/></a>
 				</div>
@@ -28,7 +26,7 @@
 					<p class="label">Visit Repository Here</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!Nodesites">
 				<div class="tile">
 					<a href="https://github.com/humza3/eCommerce"><img class="img" src="../assets/placeholder.jpg"/></a>
 				</div>
@@ -37,7 +35,7 @@
 					<p class="label">Visit Repository Here</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawablestudios.jumper.android"><img class="img" src="../assets/hiresgj.png"/></a>
 				</div>
@@ -46,7 +44,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!Nodesites">
 				<div class="tile">
 					<a href="https://github.com/humza3/interactive-portfolio"><img class="img" src="../assets/placeholder.jpg"/></a>
 				</div>
@@ -55,7 +53,7 @@
 					<p class="label">Visit Repository Here</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!Nodesites">
 				<div class="tile">
 					<a href="https://github.com/humza3/Groupmania"><img class="img" src="../assets/placeholder.jpg"/></a>
 				</div>
@@ -64,7 +62,7 @@
 					<p class="label">Visit Repository Here</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!PhPsites">
 				<div class="tile">
 					<a href="http://www.kitchen5.co.uk/"><img class="img" src="../assets/placeholder.jpg"/></a>
 				</div>
@@ -73,7 +71,7 @@
 					<p class="label">Visit Here</p>
 				</a>
 			</div>			
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawablestudios.catcher.android"><img class="img" src="../assets/hiresleak.png"/></a>
 				</div>
@@ -82,7 +80,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawablestudios.invaders.android"><img class="img" src="../assets/invadershires.png"/></a>
 				</div>
@@ -91,7 +89,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawablestudios.blocko.android"><img class="img" src="../assets/Hiresmem.png"/></a>
 				</div>
@@ -100,7 +98,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent"  v-if="!PhPsites">
 				<div class="tile">
 					<a href="http://www.mzlim.com/"><img class="img" src="../assets/placeholder.jpg"/></a>
 				</div>
@@ -109,7 +107,7 @@
 					<p class="label">Visit Here</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawablestudios.slider.android"><img class="img" src="../assets/sliderhires.png"/></a>
 				</div>
@@ -118,7 +116,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawablestudios.game.android"><img class="img" src="../assets/PiggieHires.png"/></a>
 				</div>
@@ -127,7 +125,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawblestudios.puzlock.android"><img class="img" src="../assets/hires.png"/></a>
 				</div>
@@ -136,7 +134,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!AndroidApps">
 				<div class="tile">
 					<a href="https://play.google.com/store/apps/details?id=com.drawablestudios.turtlerunner.android"><img class="img" src="../assets/Turtle-Hi-Res.png"/></a>
 				</div>
@@ -145,7 +143,7 @@
 					<p class="label"> Download Now</p>
 				</a>
 			</div>
-			<div class ="imgcontent">
+			<div class ="imgcontent" v-if="!PhPsites">
 				<div class="tile">
 					<a href="http://www.weirldnews.com/"><img class="img" src="../assets/placeholder.jpg"/></a>
 				</div>
@@ -154,9 +152,44 @@
 					<p class="label">Visit Here</p>
 				</a>
 			</div>			
-		</div>
+		</div>	
 	</div>
 </template>
+<script>
+	export default {
+		el: '#portfolio',
+		data() {
+			return {
+				AndroidApps:false,
+				PhPsites:false,
+				Nodesites:false,
+			}
+		},
+		methods: {
+			Android () {
+				this.AndroidApps = false;
+				this.PhPsites = true;
+				this.Nodesites = true;
+			},
+			Php () {
+				this.AndroidApps = true;
+				this.PhPsites = false;
+				this.Nodesites = true;
+			},
+			Node () {
+				this.AndroidApps = true;
+				this.PhPsites = true;
+				this.Nodesites = false;
+			},
+			show() {
+				this.AndroidApps = false;
+				this.PhPsites = false;
+				this.Nodesites = false;
+			}
+		}
+	}
+	
+</script>
 
 <style>
 	.tileproducts {
