@@ -3,12 +3,12 @@
 		<header id="a">
 			<div class="title">				
 				<h1><span id="h1span">Humza</span> Butt</h1>
-				<h2>Junior Web Developer</h2>
+				<h2>Web Developer</h2>
 			</div>
 		</header>			
 		<div id="aboutb">
 			<div id="g">
-				<img class="cvimg" src="src/education.png"  alt="education" title="education">
+				<img class="cvimg" src="../assets/education.png"  alt="education" title="education">
 				
 			</div>
 			<div id="h">
@@ -17,7 +17,7 @@
 			</div>
 			<div id="i">
 				<ul>
-					<li>2019 - present</li>
+					<li>2019 - 2021</li>
 					<li>London</li>
 				</ul>
 						
@@ -25,7 +25,7 @@
 			<div id="j">
 				<ul>
 					<li><h5>Openclassrooms</h5></li>
-					<li>Junior Web Developer</li>
+					<li>Level 5 Web Development Diploma</li>
 					<li>I am currently studying Web development, where I will learn how to work on the front end of websites, utilising HTML, CSS and JavaScript to make mobile responsive and interactive web-based applications.</li>
 				</ul>
 						
@@ -46,7 +46,7 @@
 						
 			</div>
 			<div id="m">
-				<img class="cvimg" src="src/experience.png"  alt="experience" title="experience">
+				<img class="cvimg" src="../assets/experience.png"  alt="experience" title="experience">
 						
 			</div>
 			<div id="n">
@@ -97,25 +97,19 @@
 		</div>  
 
 		<div id="c">
-			<img id="cat" src="src/cat.jpg"  alt="cat picture" title="picture of cat">
+			<img id="cat" src="../assets/cat.jpg"  alt="cat picture" title="picture of cat">
 		</div>
 		<div id="d">
 			<h3 class= "aside-title">Contact</h3>
 			<ul>
-				<li>Address:</li>
-				<li>London, England</li>
+				<li>Linkedin:</li>
+				<li>www.linkedin.com/in/humzabutt3/</li>
 				<li></li>
-				<li>Mobile:</li>
-				<li>02482252212</li>
+				<li>Website:</li>
+				<li>www.drawablestudios.co.uk</li>
 				<li></li>
-				<li>Email:</li>
-				<li>name@example.com</li>
-				<li></li>
-				<li>website:</li>
-				<li>www.example.com</li>
-				<li></li>
-				<li>Skype:</li>
-				<li>@username</li>
+				<li>GitHub</li>
+				<li>www.github.com/humza3</li>
 			</ul>
 		</div>
 		<div id="e">
@@ -135,10 +129,10 @@
 		</div>
 		<div id="f">
 			<h3 class= "aside-title">Hobbies</h3>
-			<img src="src/cooking.png"  alt="cooker" title="I like to cook">	
-			<img src="src/gaming.png"  alt="controller" title="I like to game">	
-			<img src="src/trading.png"  alt="trading" title="I like to trade">	
-			<img src="src/reading.png"  alt="reading books" title="I like to read">	
+			<img src="../assets/cooking.png"  alt="cooker" title="I like to cook">	
+			<img src="../assets/gaming.png"  alt="controller" title="I like to game">	
+			<img src="../assets/trading.png"  alt="trading" title="I like to trade">	
+			<img src="../assets/reading.png"  alt="reading books" title="I like to read">	
 		</div>	
 	</div>
 </template>
@@ -153,14 +147,10 @@ export default {
 	* {
     box-sizing: border-box;
     font-family: arial;
-    font-size: 12px;
     color: #24305e;
     list-style-type: none;
 }
 body {
-    width: 960px;
-    height: auto;
-    margin: 0 auto;
     font-size: 14;
 }
 @media screen and (max-width: 768px) {
@@ -169,13 +159,16 @@ body {
         background-color: #a8d0e6;
     }
 }
-section {
+.home {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-areas: "c a" "c nav" "d b" "e b" "f b";
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
-    section {
+    .home {
         width: 100%;
         display: grid;
         grid-template-columns: 50%;
