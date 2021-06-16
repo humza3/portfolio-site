@@ -179,9 +179,7 @@ body {
     grid-area: title;
     margin: 40px 50px;
     text-align: right;
-    animation-name: title;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+	animation: title 3s;
 }
 @media screen and (max-width: 768px) {
     .title {
@@ -209,27 +207,8 @@ body {
     }
 }
 @keyframes title {
-    0% {
-        transform: translateX(0);
-    }
-    10% {
-        transform: translateX(0);
-    }
-    30% {
-        transform: translateX(-35px);
-    }
-    50% {
-        transform: translateX(0);
-    }
-    57% {
-        transform: translateX(-7px);
-    }
-    64% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(0);
-    }
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 #h1span {
     color: #f8e9a1;
@@ -289,9 +268,7 @@ nav ul li a:hover {
     margin: 55px 57px;
     border: 3px solid #f8e9a1;
     border-radius: 50%;
-    animation-name: cat;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+    animation: cat 3s;
 }
 @media screen and (max-width: 768px) {
     #cat {
@@ -301,27 +278,8 @@ nav ul li a:hover {
     }
 }
 @keyframes cat {
-    0% {
-        transform: scale(1, 1) translateY(0);
-    }
-    10% {
-        transform: scale(1.1, 0.9) translateY(0);
-    }
-    30% {
-        transform: scale(0.9, 1.1) translateY(-35px);
-    }
-    50% {
-        transform: scale(1.05, 0.95) translateY(0);
-    }
-    57% {
-        transform: scale(1, 1) translateY(-7px);
-    }
-    64% {
-        transform: scale(1, 1) translateY(0);
-    }
-    100% {
-        transform: scale(1, 1) translateY(0);
-    }
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 #a {
     grid-area: a;
@@ -473,91 +431,6 @@ footer a {
     grid-area: b;
     background-color: #a8d0e6;
 }
-#slideshow {
-    overflow: hidden;
-    height: 340px;
-    width: 600px;
-    margin: 0 auto;
-}
-@media screen and (max-width: 768px) {
-    #slideshow {
-        height: 283‬px;
-        width: 500px;
-    }
-}
-.slide-wrapper {
-    width: 2400px;
-    animation: slide 18s ease infinite;
-}
-@media screen and (max-width: 768px) {
-    .slide-wrapper {
-        width: 2000px;
-        animation: mobile-slide 18s ease infinite;
-    }
-}
-.slide {
-    float: left;
-    height: 340px;
-    width: 600px;
-}
-@media screen and (max-width: 768px) {
-    .slide {
-        height: 283‬px;
-        width: 500px;
-    }
-}
-@keyframes slide {
-    0% {
-        margin-left: 0px;
-    }
-    15% {
-        margin-left: 0px;
-    }
-    25% {
-        margin-left: -600px;
-    }
-    40% {
-        margin-left: -600px;
-    }
-    50% {
-        margin-left: -1200px;
-    }
-    65% {
-        margin-left: -1200px;
-    }
-    80% {
-        margin-left: -1800px;
-    }
-    95% {
-        margin-left: -1800px;
-    }
-}
-@keyframes mobile-slide {
-    0% {
-        margin-left: 0px;
-    }
-    15% {
-        margin-left: 0px;
-    }
-    25% {
-        margin-left: -500px;
-    }
-    40% {
-        margin-left: -500px;
-    }
-    50% {
-        margin-left: -1000px;
-    }
-    65% {
-        margin-left: -1000px;
-    }
-    80% {
-        margin-left: -1500px;
-    }
-    95% {
-        margin-left: -1500px;
-    }
-}
 #aboutb {
     grid-area: b;
     padding: 30px 40px;
@@ -704,48 +577,6 @@ footer a {
 }
 #porto {
     grid-area: porto;
-}
-.imgcontent {
-    padding: 10px;
-    border-radius: 10px;
-    color: #24305e;
-    transition: background-color 500ms;
-}
-.imgcontent:hover {
-    background-color: #f76c6c;
-}
-.imgcontent a {
-    text-decoration: none;
-}
-.imgcontent p {
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-}
-.tile img {
-    width: 100%;
-}
-#contb {
-    grid-area: b;
-    background-color: #a8d0e6;
-    padding: 20px;
-}
-.contact {
-    width: 100%;
-}
-.form__group input {
-    border: 2px solid #f8e9a1;
-    border-radius: 4px;
-    color: #24305e;
-    padding: 12px 20px;
-    width: 100%;
-    transition: border-color 500ms;
-}
-.form__group input:focus {
-    border: 2px solid #f8e9a1;
-}
-.form__group input:not(:focus):invalid {
-    border: 2px solid red;
 }
 #message {
     height: 150px;

@@ -219,10 +219,12 @@
 	.tileproducts {
 		display: grid;
 		grid-gap: 15px;
+		padding:55px;
 		grid-template-columns: repeat(auto-fit, 200px);
+		align-items: center;
 	}
 	.tile img {
-		width: 200px;
+		width: 175px;
 	}
 	button {
 		background-color: white;
@@ -241,5 +243,26 @@
 	button:hover {
 		background-color: #555555;
 		color: white;
+	}
+	
+	.imgcontent {
+		padding: 15px;
+		width:200px;
+		height:330px;
+		border-radius: 10px;
+		color: #24305e;;
+		box-shadow: 5px 10px 18px #888888;
+		transition: background-color 500ms;
+	}
+	.imgcontent:hover {
+		background-color: #f76c6c;
+	}
+	.imgcontent a {
+		text-decoration: none;
+	}
+	.imgcontent p {
+		font-size: 14px;
+		font-weight: 600;
+		text-align: center;
 	}
 </style>
