@@ -298,6 +298,11 @@ body {
     animation-name: aside;
     animation-duration: 2s;
 }
+#d ul li a{	
+    animation-name: aside;
+    animation-duration: 2s;
+}
+
 @media screen and (max-width: 768px) {
     #d ul li {
         padding: 2px 30px;
