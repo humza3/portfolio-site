@@ -22,7 +22,7 @@
   padding: 0;
   width:100%;
   overflow: hidden;
-  background-color: #333;
+  background-color: #202020;
 }
 #nav a{
   display: inline-block;
@@ -35,9 +35,9 @@
 
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #FFDF6C;
 }
 #nav a:hover {
-  background-color: #111;
+  background-color: #3F3F3F;
 }
 </style>

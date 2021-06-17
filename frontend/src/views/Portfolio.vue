@@ -213,15 +213,23 @@
 		height: auto;
 		margin: 0 auto;
 	}
+	@media screen and (max-width: 768px) {
+		#portfolio {	
+			width: 100%;
+		}
+	}
+	#portnav {
+		width:100%;
+	}
 	#description {
 		font-size:10px;
 	}
 	.tileproducts {
 		display: grid;
+		justify-content: center;
 		grid-gap: 15px;
-		padding:55px;
 		grid-template-columns: repeat(auto-fit, 200px);
-		align-items: center;
+		margin:0 auto;
 	}
 	.tile img {
 		width: 175px;
@@ -239,7 +247,13 @@
 		transition-duration: 0.4s;
 		cursor: pointer;
 	}
-
+	@media screen and (max-width: 768px) {
+		button {	
+			padding: 8px 17px;
+			font-size: 12px;
+			margin: 2px 1px;
+		}
+	}
 	button:hover {
 		background-color: #555555;
 		color: white;
@@ -250,12 +264,12 @@
 		width:200px;
 		height:330px;
 		border-radius: 10px;
-		color: #24305e;;
+		color: #202020;;
 		box-shadow: 5px 10px 18px #888888;
 		transition: background-color 500ms;
 	}
 	.imgcontent:hover {
-		background-color: #f76c6c;
+		background-color: #707070;
 	}
 	.imgcontent a {
 		text-decoration: none;

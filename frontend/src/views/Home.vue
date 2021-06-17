@@ -8,8 +8,7 @@
 		</header>			
 		<div id="aboutb">
 			<div id="g">
-				<img class="cvimg" src="../assets/education.png"  alt="education" title="education">
-				
+				<img class="cvimg" src="../assets/education.png"  alt="education" title="education">				
 			</div>
 			<div id="h">
 				<h3>Education</h3>
@@ -64,7 +63,9 @@
 				<ul>
 					<li><h5>Amazon</h5></li>
 					<li>Warehouse Associate</li>
-					<li>I work in the stow department of Amazon FC my primary role is to make sure Amazon’s stock is replenished and customer demands are met in a timely fashion.</li>
+					<li>I work in a team to locate and process customer orders sticking to strict time limits.
+					I communicate with seniors from other departments to ensure products are shipped to customers in a timely manner.
+					I use a in-house database and Excel to analyse location of customer orders and report to senior managers of current daily activities</li>
 				</ul>								
 			</div>
 			<div id="q">
@@ -78,7 +79,9 @@
 				<ul>
 					<li><h5>Self Employed</h5></li>
 					<li>Day Trader</li>
-					<li>I traded mostly ordinary shares as well as trading on the futures market. I analysed stock/commodity prices through predominantly technical analysis whilst using some fundamental analysis to gain an edge on the market.</li>
+					<li>I traded mostly ordinary shares as well as trading on the futures market. I analysed stock/commodity prices through predominantly technical analysis whilst using some fundamental analysis to gain an edge on the market.
+					Gathering information; news, data releases and other market information which are then reviewed and analysed to see the importance and severity
+					of the effect towards a financial instrument. I used Excel for profit and loss statements as well as for trading support</li>
 				</ul>							
 			</div>
 			<div id="s">
@@ -91,7 +94,10 @@
 				<ul>
 					<li><h5>Natrinza Ceramics</h5></li>
 					<li>General Administrator</li>
-					<li>I worked in a dental technician’s laboratory where I helped with office work, prospective sales phone calls as well as door to door appointments to new clients as well as helped in the production of Crowns and bridges.</li>
+					<li>I worked in a dental technician’s laboratory where I helped with office work, prospective
+					sales phone calls as well as door to door appointments to new clients as well as helped in
+					the production of Crowns and bridges. I used Microsoft Word, Excel, PowerPoint and Outlook for
+					creating invoices, handling and inputting sales data for the accountants and making promotional leaflets.</li>
 				</ul>								
 			</div>
 		</div>  
@@ -103,19 +109,19 @@
 			<h3 class= "aside-title">Contact</h3>
 			<ul>
 				<li>Linkedin:</li>
-				<li>www.linkedin.com/in/humzabutt3/</li>
+				<li><a href="www.linkedin.com/in/humzabutt3/">linkedin.com/in/humzabutt3/</a></li>
 				<li></li>
 				<li>Website:</li>
-				<li>www.drawablestudios.co.uk</li>
+				<li><a href="www.drawablestudios.co.uk">Drawable Studios</a></li>
 				<li></li>
 				<li>GitHub</li>
-				<li>www.github.com/humza3</li>
+				<li><a href="www.github.com/humza3">Github.com/humza3</a></li>
 			</ul>
 		</div>
 		<div id="e">
 			<h3 class= "aside-title">About Me</h3>
 			<p>
-			I am an Economics graduate who is currently studying for a career change into Web development.
+			I am a recently graduated Web Developer looking for entry level role in a well established engineering team specializing in Javascript, Node.j and Vue.js.
 			A few years prior, I taught myself how to make websites and android apps by studying Web and app
 			development books and utilising online resources. Although my pursuits in web and mobile development
 			were at a hobbyist level, in that time I managed to create four websites and nine apps.
@@ -147,7 +153,7 @@ export default {
 	* {
     box-sizing: border-box;
     font-family: arial;
-    color: #24305e;
+    color: #202020;
     list-style-type: none;
 }
 body {
@@ -156,13 +162,13 @@ body {
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
-        background-color: #a8d0e6;
+        background-color: #FFFFFF;
     }
 }
 .home {
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-areas: "c a" "c nav" "d b" "e b" "f b";
+    grid-template-areas: "c a" "d b" "e b" "f b";
     width: 960px;
     height: auto;
     margin: 0 auto;
@@ -170,9 +176,10 @@ body {
 @media screen and (max-width: 768px) {
     .home {
         width: 100%;
+		min-width:440px;
         display: grid;
         grid-template-columns: 50%;
-        grid-template-areas: "c a" "nav nav" "b b" "e e" "f f" "d d";
+        grid-template-areas: "c a" "b b" "e e" "f f" "d d";
     }
 }
 .title {
@@ -199,7 +206,7 @@ body {
     font-size: 20px;
     text-align: center-right;
     margin: 0 auto;
-    text-decoration: underline solid #f8e9a1;
+    text-decoration: underline solid #FFDF6C;
 }
 @media screen and (max-width: 768px) {
     .title h2 {
@@ -211,7 +218,7 @@ body {
 	100% {opacity:1;}
 }
 #h1span {
-    color: #f8e9a1;
+    color: #FFDF6C;
     font-size: 40px;
     text-align: center-right;
     margin: 0 auto;
@@ -221,59 +228,18 @@ body {
         text-align: left;
     }
 }
-nav {
-    grid-area: nav;
-    width: 100%;
-    background-color: #a8d0e6;
-}
-nav ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #24305e;
-}
-nav ul li {
-    float: left;
-    margin: 0 40px;
-}
-@media screen and (max-width: 768px) {
-    nav ul li {
-        margin: 0 5%;
-    }
-}
-nav ul li a {
-    display: block;
-    color: #a8d0e6;
-    font-size: 14px;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: transform 300ms ease-in, background-color 300ms ease-in;
-}
-nav ul li a:hover {
-    background-color: #161d39;
-    color: #f8e9a1;
-    transform: scale(1.15);
-}
-.active {
-    transform: scale(1.15);
-}
-.active a {
-    background-color: #161d39;
-    color: #f8e9a1;
-}
 #cat {
     width: 175px;
     height: 175px;
     margin: 55px 57px;
-    border: 3px solid #f8e9a1;
+    border: 3px solid #FFDF6C;
     border-radius: 50%;
     animation: cat 3s;
 }
 @media screen and (max-width: 768px) {
     #cat {
         margin: 40px 10px;
-        border: 3px solid #f8e9a1;
+        border: 3px solid #FFDF6C;
         border-radius: 50%;
     }
 }
@@ -283,31 +249,31 @@ nav ul li a:hover {
 }
 #a {
     grid-area: a;
-    background-color: #a8d0e6;
+    background-color: #FFFFFF;
 }
 @media screen and (max-width: 768px) {
     #a {
         width: 100%;
-        min-width: 300px;
+		min-width: 200px;
         padding: 10px 5px;
     }
 }
 #c {
-    background-color: #f76c6c;
+    background-color: #707070;
     grid-area: c;
     height: 250px;
 }
 @media screen and (max-width: 768px) {
     #c {
         max-width: 175px;
-        background-color: #a8d0e6;
+        background-color: #FFFFFF;
     }
 }
 .aside-title {
-    background-color: #24305e;
+    background-color: #202020;
     font-size: 20px;
     font-weight: 700;
-    color: #f8e9a1;
+    color: #FFDF6C;
     padding: 4px 0;
     text-align: center;
     width: 288px;
@@ -321,7 +287,7 @@ nav ul li a:hover {
 }
 #d {
     grid-area: d;
-    background-color: #f76c6c;
+    background-color: #707070;
 }
 #d ul {
     padding-inline-start: 0;
@@ -339,15 +305,15 @@ nav ul li a:hover {
 }
 @keyframes aside {
     0% {
-        color: #f76c6c;
+        color: #707070;
     }
     100% {
-        color: #24305e;
+        color: #202020;
     }
 }
 #e {
     grid-area: e;
-    background-color: #f76c6c;
+    background-color: #707070;
 }
 #e p {
     padding: 10px 30px;
@@ -362,7 +328,7 @@ nav ul li a:hover {
 }
 #f {
     grid-area: f;
-    background-color: #f76c6c;
+    background-color: #707070;
 }
 #f img {
     margin: 10px 9px;
@@ -410,7 +376,7 @@ nav ul li a:hover {
     }
 }
 footer {
-    background-color: #24305e;
+    background-color: #202020;
     margin: 0;
     padding: 0;
 }
@@ -420,21 +386,21 @@ footer {
     }
 }
 footer p {
-    color: #f8e9a1;
+    color: #FFDF6C;
     margin: 0;
     padding: 0;
 }
 footer a {
-    color: #f8e9a1;
+    color: #FFDF6C;
 }
 #homeb {
     grid-area: b;
-    background-color: #a8d0e6;
+    background-color: #FFFFFF;
 }
 #aboutb {
     grid-area: b;
     padding: 30px 40px;
-    background-color: #a8d0e6;
+    background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas: "g h h h h" "i j j j j" "k l l l l" "m n n n n" "o p p p p" "q r r r r" "s t t t t" "u v v v v" ". w w x x";
@@ -442,24 +408,34 @@ footer a {
 @media screen and (max-width: 768px) {
     #aboutb {
         width: 100%;
-        min-width: 300px;
+        min-width: 400px;
         padding: 10px 5px;
     }
 }
 #aboutb h3 {
-    background-color: #24305e;
+    background-color: #202020;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
     padding: 10px 0;
-    color: #f8e9a1;
-    width: 540.33px;
-    margin: 4px 0px 0px -27px;
+    color: #FFDF6C;
+    width: 529.33px;
+    margin: 4px 0px 0px -16px;
 }
 #aboutb h3 include mobile-only {
     width: 100%;
     margin: 4px 0px 0px 5px;
 }
+@media screen and (max-width: 768px) {
+	#aboutb h3 {		
+		width: 100%;
+		min-width: 300px;
+		margin: 4px 0px 0px 5px;
+		
+	}
+}
+
+
 #aboutb h5 {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -475,7 +451,8 @@ footer a {
     }
 }
 .cvimg {
-    border: 2px solid #f8e9a1;
+    border: 2px solid #FFDF6C;
+	z-index:1;
     margin: 0px 0px 0px 37px;
 }
 @media screen and (max-width: 768px) {
@@ -485,6 +462,7 @@ footer a {
 }
 #g {
     grid-area: g;
+	z-index:10;
 }
 #h {
     grid-area: h;
@@ -503,6 +481,7 @@ footer a {
 }
 #m {
     grid-area: m;
+	z-index:10;
 }
 #n {
     grid-area: n;
@@ -539,7 +518,7 @@ footer a {
 }
 #portb {
     grid-area: b;
-    background-color: #a8d0e6;
+    background-color: #FFFFFF;
     display: grid;
     padding: 10px 3%;
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
@@ -580,9 +559,9 @@ footer a {
 }
 #message {
     height: 150px;
-    border: 2px solid #f8e9a1;
+    border: 2px solid #FFDF6C;
     border-radius: 2px;
-    color: #24305e;
+    color: #202020;
     padding: 12px 20px;
     width: 100%;
     border-radius: 4px;
