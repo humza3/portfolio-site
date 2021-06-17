@@ -111,9 +111,6 @@
 				<li>LinkedIn:</li>
 				<li><a href="https://www.linkedin.com/in/humzabutt3/">linkedin.com/in/humzabutt3/</a></li>
 				<li></li>
-				<li>Website:</li>
-				<li><a href="http://www.drawablestudios.co.uk/#/">Drawable Studios</a></li>
-				<li></li>
 				<li>GitHub</li>
 				<li><a href="https://github.com/humza3">Github.com/humza3</a></li>
 			</ul>
@@ -176,7 +173,7 @@ body {
 @media screen and (max-width: 768px) {
     .home {
         width: 100%;
-		min-width:440px;
+		min-width:352px;
         display: grid;
         grid-template-columns: 50%;
         grid-template-areas: "c a" "b b" "e e" "f f" "d d";
@@ -255,7 +252,7 @@ body {
     #a {
         width: 100%;
 		min-width: 200px;
-        padding: 10px 5px;
+        padding: 10px 15px;
     }
 }
 #c {
@@ -427,14 +424,10 @@ footer a {
     width: 529.33px;
     margin: 4px 0px 0px -16px;
 }
-#aboutb h3 include mobile-only {
-    width: 100%;
-    margin: 4px 0px 0px 5px;
-}
 @media screen and (max-width: 768px) {
 	#aboutb h3 {		
 		width: 100%;
-		min-width: 300px;
+		min-width: 100px;
 		margin: 4px 0px 0px 5px;
 		
 	}

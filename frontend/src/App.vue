@@ -21,6 +21,7 @@
   margin: 0;
   padding: 0;
   width:100%;
+  min-width:400px;
   overflow: hidden;
   background-color: #202020;
 }
