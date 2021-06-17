@@ -108,7 +108,7 @@
 		<div id="d">
 			<h3 class= "aside-title">Contact</h3>
 			<ul>
-				<li>Linkedin:</li>
+				<li>LinkedIn:</li>
 				<li><a href="https://www.linkedin.com/in/humzabutt3/">linkedin.com/in/humzabutt3/</a></li>
 				<li></li>
 				<li>Website:</li>
