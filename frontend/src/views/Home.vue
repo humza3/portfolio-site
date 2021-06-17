@@ -109,13 +109,13 @@
 			<h3 class= "aside-title">Contact</h3>
 			<ul>
 				<li>Linkedin:</li>
-				<li><a href="www.linkedin.com/in/humzabutt3/">linkedin.com/in/humzabutt3/</a></li>
+				<li><a href="https://www.linkedin.com/in/humzabutt3/">linkedin.com/in/humzabutt3/</a></li>
 				<li></li>
 				<li>Website:</li>
-				<li><a href="www.drawablestudios.co.uk">Drawable Studios</a></li>
+				<li><a href="http://www.drawablestudios.co.uk/#/">Drawable Studios</a></li>
 				<li></li>
 				<li>GitHub</li>
-				<li><a href="www.github.com/humza3">Github.com/humza3</a></li>
+				<li><a href="https://github.com/humza3">Github.com/humza3</a></li>
 			</ul>
 		</div>
 		<div id="e">
